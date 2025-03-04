@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    
+}
+.logo
+{
+    width:  200px;
+    height: 100px;
+}
+.logo-container
+{
+    
+    margin-right: 30%;
+}
+a
+{
+    text-decoration: none;
+    color: orange;
+    
+}
+.menu-container
+{
+    display: flex;
+    gap: 40px;
+    color: orange;
+}
+
+/* data Section */
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.data-left {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.data-right {
+    flex: 1;
+    text-align: center;
+}
+
+.data h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.data h1 span {
+    color: #ffc107;
+}
+
+.data h4 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.data p {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.data img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    color: #17a2b8;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #138496;
+}
+
+/* Projects Section */
+
+.section-title
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 18rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.project-card img {
+    
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-info h5 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.project-info a {
+    color: #17a2b8;
+    font-size: 1.5rem;
+}
+
+.project-info a:hover {
+    color: #138496;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-left, .skills-right {
+    flex: 1;
+    text-align: center;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.badges span {
+    background-color: #17a2b8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+}
+
+.submit-btn {
+    background-color: #17a2b8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #138496;
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .data {
+        flex-direction: column;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
